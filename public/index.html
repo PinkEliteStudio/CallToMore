@@ -3,61 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <meta name="description" content="Call To More with Rhina Delgado — Your Cheerleader of Hope. Sharing the Word of God with intention, teaching you to seek Him first, and encouraging you to do the work, grind with faith, and walk in God's favor and restoration.">
-    <meta name="keywords" content="Call To More, faith, hope, restoration, God's favor, Christian encouragement, seek God first, Rhina Delgado, Christian YouTube, Bible teaching">
+    <meta name="description" content="Call To More with Rhina Delgado — Your Cheerleader of Hope. Sharing the Word of God with intention.">
+    <meta name="keywords" content="Call To More, faith, hope, restoration, God's favor, Rhina Delgado">
     <meta name="author" content="Rhina Delgado">
     <title>Call To More | Cheerleader of Hope with Rhina Delgado</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "Person",
-        "name": "Rhina Delgado",
-        "alternateName": "Call To More",
-        "description": "Christian encourager and cheerleader of hope sharing the Word of God, teaching intentional faith, restoration, and walking in God's favor.",
-        "url": "https://vividassistpro.com",
-        "image": "https://raw.githubusercontent.com/PINKEliteStudio/vividassistpro/main/rhinaimage.jpg",
-        "sameAs": [
-            "https://www.youtube.com/@CallToMore",
-            "https://www.instagram.com/vividassistpro"
-        ],
-        "contactPoint": {
-            "@type": "ContactPoint",
-            "email": "pinkeliteva@gmail.com",
-            "contactType": "Customer Service",
-            "telephone": "786-385-7888"
-        }
-    }
-    </script>
-    <meta name="google-site-verification" content="A_Ud7dzKo7OgwFWYUj3URakQm3lhzJVWFHB2ZdQPNMY" />
-    <link rel="alternate" hreflang="en" href="https://vividassistpro.com/" />
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-4GPS2B0L2T"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-4GPS2B0L2T');
-    </script>
+    
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@400;500;600&display=swap');
         
-        :root {
-            --pink: #F8C8DC;
-            --soft-pink: #F4A8C4;
-            --blue: #A7D8E8;
-            --green: #B5E8C7;
-            --yellow: #FFF8B5;
+        .hero-banner {
+            background: linear-gradient(135deg, 
+                #F8C1D9 0%,      /* Main Pastel Pink */
+                #F8C1D9 60%, 
+                #FFE4B8 70%,     /* Soft touch of pastel yellow */
+                #B8E0F0 80%,     /* Soft touch of pastel blue */
+                #C8EFD3 90%      /* Soft touch of pastel green */
+            );
         }
-        
-        .bg-main { background-color: #FFF0F5; } /* Soft pastel pink base */
+
         .accent-pink { color: #F472B6; }
-        .accent-blue { color: #60A5FA; }
-        .accent-green { color: #4ADE80; }
         .accent-yellow { color: #FACC15; }
-        
-        .hero-bg {
-            background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url('https://images.unsplash.com/photo-1501785888041-af3ef285b470') center/cover no-repeat;
-        }
         
         .hover-pink { transition: all 0.3s ease; }
         .hover-pink:hover { 
@@ -75,21 +41,18 @@
         
         .bible-quote {
             font-style: italic;
-            border-left: 5px solid #F472B6;
+            border-left: 6px solid #F472B6;
         }
-        
-        .animate-fade-in { animation: fadeIn 1s ease-in; }
-        @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
     </style>
 </head>
-<body class="bg-main font-sans text-gray-800">
+<body class="bg-[#FFF0F5] font-sans text-gray-800">
+
     <!-- Header -->
     <header class="bg-white shadow-md fixed top-0 w-full z-50">
         <div class="container mx-auto px-6 py-5 flex items-center justify-between">
             <div class="flex items-center gap-3">
                 <img src="https://raw.githubusercontent.com/PINKEliteStudio/vividassistpro/main/vividlogo.png" 
-                     alt="Vivid Assist Pro" 
-                     class="h-10 object-contain">
+                     alt="Vivid Assist Pro" class="h-10 object-contain">
                 <div class="h-6 w-px bg-gray-300"></div>
                 <div>
                     <span class="text-xl font-bold accent-pink">Call To More</span>
@@ -101,7 +64,7 @@
                 <a href="#home" class="hover-pink">Home</a>
                 <a href="#message" class="hover-pink">My Message</a>
                 <a href="#teachings" class="hover-pink">Teachings</a>
-                <a href="#resources" class="hover-pink">Resources</a>
+                <a href="#newsletter" class="hover-pink">Newsletter</a>
                 <a href="#contact" class="hover-pink">Connect</a>
             </nav>
             
@@ -117,207 +80,159 @@
             </button>
         </div>
         
-        <!-- Mobile Menu -->
         <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
             <div class="px-6 py-6 flex flex-col space-y-5 text-base">
                 <a href="#home" class="hover-pink">Home</a>
                 <a href="#message" class="hover-pink">My Message</a>
                 <a href="#teachings" class="hover-pink">Teachings</a>
-                <a href="#resources" class="hover-pink">Resources</a>
+                <a href="#newsletter" class="hover-pink">Newsletter</a>
                 <a href="#contact" class="hover-pink">Connect</a>
-                <a href="https://calendly.com/pinkelitestudio" 
-                   class="bg-[#F472B6] text-white px-6 py-3 rounded-full text-center font-medium">
+                <a href="https://calendly.com/pinkelitestudio" class="bg-[#F472B6] text-white px-6 py-3 rounded-full text-center font-medium">
                     Book a Call
                 </a>
             </div>
         </div>
     </header>
 
-    <!-- Hero -->
-    <section id="home" class="hero-bg min-h-screen flex items-center pt-20">
-        <div class="container mx-auto px-6 relative z-10 text-white">
-            <div class="max-w-2xl">
-                <div class="inline-flex items-center gap-2 bg-white/20 backdrop-blur-md px-4 py-1.5 rounded-full text-sm mb-6">
-                    <span class="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span>
-                    New Season • Walking With Purpose
+    <!-- Hero - Solid Pastel Pink with Gentle Touches -->
+    <section id="home" class="hero-banner min-h-screen flex items-center relative pt-20">
+        <div class="container mx-auto px-6 relative z-10 text-center text-gray-800">
+            <div class="max-w-3xl mx-auto">
+                <div class="inline-flex items-center gap-2 bg-white/70 backdrop-blur-md px-5 py-2 rounded-full text-sm font-medium mb-8 shadow-sm">
+                    <span class="w-2.5 h-2.5 bg-green-400 rounded-full animate-pulse"></span>
+                    A New Season of Purpose & Hope
                 </div>
                 
-                <h1 class="text-5xl md:text-6xl font-bold leading-tight mb-6">
-                    God Has Called You To <span class="accent-yellow">More</span>
+                <h1 class="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6">
+                    God Has Called You<br>To <span class="accent-yellow">MORE</span>
                 </h1>
                 
-                <p class="text-xl md:text-2xl mb-10 text-white/90">
-                    I'm Rhina Delgado — your cheerleader of hope. After my divorce stole my joy, hope, and smile, God restored everything and more. Now I teach you to seek Him first, do the work, and walk in His favor.
+                <p class="text-xl md:text-2xl max-w-2xl mx-auto mb-10 text-gray-700">
+                    I'm Rhina Delgado, your cheerleader of hope.<br>
+                    After my divorce, God restored my joy and showed me His favor. 
+                    Now I help you seek Him first, do the work, and walk into your calling.
                 </p>
                 
-                <div class="flex flex-col sm:flex-row gap-4">
-                    <a href="https://www.youtube.com/@CallToMore" 
-                       target="_blank"
-                       class="bg-white text-gray-900 px-8 py-4 rounded-full font-semibold flex items-center justify-center gap-2 hover:bg-yellow-100 transition-all">
-                        <span>Watch on YouTube</span>
-                        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7-7 7" />
-                        </svg>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="https://www.youtube.com/@CallToMore" target="_blank"
+                       class="bg-white text-gray-900 px-10 py-4 rounded-full font-semibold text-lg shadow-md hover:shadow-xl transition-all flex items-center justify-center gap-2">
+                        Watch on YouTube
                     </a>
                     
                     <a href="#newsletter" 
-                       class="border-2 border-white text-white px-8 py-4 rounded-full font-semibold hover:bg-white hover:text-gray-900 transition-all text-center">
+                       class="border-2 border-white bg-transparent text-gray-800 px-10 py-4 rounded-full font-semibold text-lg hover:bg-white hover:text-gray-900 transition-all">
                         Join the Newsletter
                     </a>
                 </div>
-                
-                <div class="mt-12 flex items-center gap-8 text-sm">
-                    <a href="https://www.instagram.com/vividassistpro" target="_blank" class="flex items-center gap-2 hover:text-pink-200">
-                        <span>Instagram</span>
-                    </a>
-                    <a href="https://www.youtube.com/@CallToMore" target="_blank" class="flex items-center gap-2 hover:text-pink-200">
-                        <span>YouTube</span>
-                    </a>
-                </div>
             </div>
         </div>
-        
-        <!-- Side branding for Vivid Assist Pro -->
-        <div class="hidden lg:flex absolute bottom-12 right-12 bg-white/90 backdrop-blur-md p-6 rounded-2xl shadow-xl max-w-[240px]">
-            <div class="text-xs leading-relaxed text-gray-700">
-                <div class="font-semibold text-pink-600 mb-1">Vivid Assist Pro</div>
-                <p class="text-[13px]">Supporting this new season of purpose-driven ministry with visionary branding & creative excellence.</p>
-                <a href="https://vividassistpro.com" class="text-pink-600 text-xs mt-3 inline-block hover:underline">Learn more →</a>
+
+        <!-- Vivid Assist Pro Side Box -->
+        <div class="hidden xl:block absolute bottom-16 right-12 bg-white/80 backdrop-blur-md p-6 rounded-3xl shadow-lg max-w-[260px]">
+            <div class="text-sm">
+                <div class="font-semibold accent-pink mb-1">Vivid Assist Pro</div>
+                <p class="text-gray-600 text-[13px]">Supporting this new season of purpose-driven ministry with visionary branding.</p>
+                <a href="https://vividassistpro.com" class="text-pink-500 text-xs mt-4 inline-block hover:underline">Learn more →</a>
             </div>
         </div>
     </section>
 
-    <!-- Key Bible Verse -->
+    <!-- Bible Verse -->
     <section class="py-16 bg-white">
         <div class="container mx-auto px-6 max-w-3xl text-center">
-            <div class="bible-quote p-8 bg-[#FFF0F5] rounded-3xl">
+            <div class="bible-quote p-10 bg-[#FFF0F5] rounded-3xl">
                 <p class="text-2xl leading-relaxed text-gray-700">
-                    "For You, O LORD, bless the righteous man [the one who is in right standing with You]; 
-                    You surround him with favor as with a shield."
+                    “For You, O LORD, bless the righteous man; You surround him with favor as with a shield.”
                 </p>
-                <p class="text-pink-600 mt-4 font-medium">— Psalm 5:12 AMP</p>
+                <p class="text-pink-600 mt-6 font-medium">— Psalm 5:12 AMP</p>
             </div>
         </div>
     </section>
 
-    <!-- My Story / Message -->
+    <!-- My Story -->
     <section id="message" class="py-20 bg-[#F0F9FF]">
         <div class="container mx-auto px-6">
             <div class="grid md:grid-cols-12 gap-12 items-center">
                 <div class="md:col-span-5">
                     <img src="https://raw.githubusercontent.com/PINKEliteStudio/vividassistpro/main/rhinaimage.jpg" 
-                         alt="Rhina Delgado"
-                         class="w-full rounded-3xl shadow-2xl object-cover aspect-square">
+                         alt="Rhina Delgado" class="w-full rounded-3xl shadow-2xl object-cover">
                 </div>
-                
                 <div class="md:col-span-7">
                     <h2 class="text-4xl font-bold mb-6">From Broken to Blessed</h2>
                     <div class="prose text-lg text-gray-600 space-y-6">
-                        <p>
-                            After my divorce, my hope, my smile, my life, and even my joy were stolen. I felt lost. But when I got serious with God — no shortcuts — everything changed.
-                        </p>
-                        <p>
-                            I discovered the power of seeking Him first. I learned that we are already blessed from the beginning (Genesis 1:29), and God's will has the blueprint for our future. We just need faith and intention to grab it.
-                        </p>
+                        <p>After my divorce, my hope, joy, and smile were taken from me. But when I got serious with God, everything changed.</p>
+                        <p>I learned there are no shortcuts to success. We must be willing to do the work and grind with faith.</p>
                         <p class="font-semibold accent-pink">
-                            God is the God of restoration. He promises to repay what the locust has eaten (Joel 2:25) and that the thief must restore sevenfold (Proverbs 6:31).
+                            God is the God of restoration — He restores what the locust has eaten (Joel 2:25) 
+                            and makes the thief repay sevenfold (Proverbs 6:31).
                         </p>
-                        <p>
-                            There are no shortcuts to success. You have to be willing to do the work and grind in faith. I'm here as your cheerleader of hope to encourage you every step of the way.
-                        </p>
-                    </div>
-                    
-                    <div class="mt-10 flex gap-4">
-                        <a href="https://www.youtube.com/@CallToMore" target="_blank"
-                           class="flex-1 bg-[#F472B6] text-white py-4 rounded-2xl text-center font-semibold hover:bg-pink-600 transition">
-                            Watch My Videos
-                        </a>
-                        <a href="#newsletter"
-                           class="flex-1 border-2 border-pink-300 text-pink-600 py-4 rounded-2xl text-center font-semibold hover:bg-pink-50 transition">
-                            Join the Community
-                        </a>
+                        <p>Now I walk with purpose as your cheerleader of hope, encouraging you to seek God first and step into the “more” He has for you.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Teachings / Services Style Section -->
+    <!-- Teachings -->
     <section id="teachings" class="py-20 bg-white">
         <div class="container mx-auto px-6">
             <div class="text-center mb-16">
-                <span class="px-4 py-2 bg-yellow-100 text-yellow-700 rounded-full text-sm font-medium">New Videos Weekly</span>
-                <h2 class="text-4xl font-bold mt-4">Encouragement & Teachings</h2>
-                <p class="text-gray-600 mt-3 max-w-md mx-auto">Practical faith, restoration, favor, and living with intention</p>
+                <h2 class="text-4xl font-bold mb-4">Faith-Filled Encouragement</h2>
+                <p class="text-gray-600">Practical teachings to help you grow in faith and purpose</p>
             </div>
             
             <div class="grid md:grid-cols-3 gap-8">
                 <div class="card bg-white border border-pink-100 p-8 rounded-3xl">
-                    <div class="h-12 w-12 bg-pink-100 text-pink-600 rounded-2xl flex items-center justify-center mb-6 text-2xl">🙏</div>
+                    <div class="h-12 w-12 bg-pink-100 rounded-2xl flex items-center justify-center mb-6 text-3xl">🙏</div>
                     <h3 class="text-2xl font-semibold mb-3">Seek God First</h3>
-                    <p class="text-gray-600">No shortcuts. Build your life on the solid foundation of intentional time with the Father.</p>
+                    <p class="text-gray-600">No shortcuts. Build your foundation with intentional time with the Father.</p>
                 </div>
-                
                 <div class="card bg-white border border-blue-100 p-8 rounded-3xl">
-                    <div class="h-12 w-12 bg-blue-100 text-blue-600 rounded-2xl flex items-center justify-center mb-6 text-2xl">🛡️</div>
-                    <h3 class="text-2xl font-semibold mb-3">God's Favor as a Shield</h3>
-                    <p class="text-gray-600">Psalm 5:12 — Learn how to walk in the favor that surrounds the righteous.</p>
+                    <div class="h-12 w-12 bg-blue-100 rounded-2xl flex items-center justify-center mb-6 text-3xl">🛡️</div>
+                    <h3 class="text-2xl font-semibold mb-3">God's Favor</h3>
+                    <p class="text-gray-600">Surrounded by favor as with a shield — Psalm 5:12</p>
                 </div>
-                
                 <div class="card bg-white border border-green-100 p-8 rounded-3xl">
-                    <div class="h-12 w-12 bg-green-100 text-green-600 rounded-2xl flex items-center justify-center mb-6 text-2xl">🌱</div>
-                    <h3 class="text-2xl font-semibold mb-3">Restoration & Payback</h3>
-                    <p class="text-gray-600">Joel 2:25 and Proverbs 6:31 — God restores what was stolen and brings beauty from ashes.</p>
+                    <div class="h-12 w-12 bg-green-100 rounded-2xl flex items-center justify-center mb-6 text-3xl">🌱</div>
+                    <h3 class="text-2xl font-semibold mb-3">Restoration</h3>
+                    <p class="text-gray-600">God restores what was lost and brings beauty from every pain.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Newsletter Signup -->
-    <section id="newsletter" class="py-20 bg-gradient-to-br from-[#F8C8DC] via-[#A7D8E8] to-[#B5E8C7]">
+    <!-- Newsletter -->
+    <section id="newsletter" class="py-20 bg-gradient-to-br from-[#F8C1D9] to-[#F8C1D9]">
         <div class="container mx-auto px-6 max-w-2xl text-center">
-            <h2 class="text-4xl font-bold text-gray-800 mb-4">Join the Call To More Family</h2>
-            <p class="text-xl text-gray-700 mb-10">
-                Get weekly encouragement, Bible insights, and reminders to seek God first in your inbox.
-            </p>
+            <h2 class="text-4xl font-bold mb-4">Join the Call To More Family</h2>
+            <p class="text-xl text-gray-700 mb-10">Receive weekly encouragement, Bible insights, and faith reminders straight to your inbox.</p>
             
-            <form class="space-y-4" onsubmit="alert('Thank you! This is a placeholder — connect your CRM here.'); return false;">
+            <form class="space-y-4" onsubmit="alert('Thank you! This is a demo. Connect your CRM when ready.'); return false;">
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <input type="text" placeholder="First Name" 
-                           class="px-6 py-4 rounded-2xl border border-white focus:outline-none focus:border-pink-400 bg-white/80">
-                    <input type="email" placeholder="Your Email" required
-                           class="px-6 py-4 rounded-2xl border border-white focus:outline-none focus:border-pink-400 bg-white/80">
+                    <input type="text" placeholder="First Name" class="px-6 py-4 rounded-2xl border border-white focus:outline-none focus:border-pink-400 bg-white/90">
+                    <input type="email" placeholder="Your Email Address" required class="px-6 py-4 rounded-2xl border border-white focus:outline-none focus:border-pink-400 bg-white/90">
                 </div>
-                <button type="submit"
-                        class="w-full bg-gray-900 hover:bg-black text-white py-4 rounded-2xl font-semibold text-lg transition">
-                    Subscribe for Free Encouragement
+                <button type="submit" class="w-full bg-gray-900 hover:bg-black text-white py-4 rounded-2xl font-semibold text-lg transition">
+                    Subscribe Now - It's Free
                 </button>
-                <p class="text-xs text-gray-600">You can unsubscribe anytime. We respect your inbox.</p>
             </form>
         </div>
     </section>
 
-    <!-- Connect -->
+    <!-- Contact -->
     <section id="contact" class="py-20 bg-gray-900 text-white">
         <div class="container mx-auto px-6 text-center">
             <h2 class="text-4xl font-bold mb-6">Let's Walk This Out Together</h2>
-            <p class="max-w-md mx-auto text-gray-300 mb-10">
-                Whether you're rebuilding after loss or stepping into your next season, I'm here to cheer you on.
-            </p>
+            <p class="max-w-md mx-auto text-gray-300 mb-10">Ready to step into your “more”? I'm here to encourage and support you.</p>
             
             <a href="https://calendly.com/pinkelitestudio" 
                class="inline-block bg-[#F472B6] text-white px-10 py-4 rounded-full text-lg font-semibold hover:bg-pink-500 transition">
                 Book a Discovery Call
             </a>
             
-            <div class="mt-12 text-sm text-gray-400">
+            <div class="mt-12 text-sm text-gray-400 space-y-1">
                 <p>Email: <a href="mailto:pinkeliteva@gmail.com" class="hover:text-pink-300">pinkeliteva@gmail.com</a></p>
-                <p class="mt-1">Phone: 786-385-7888</p>
-            </div>
-            
-            <div class="flex justify-center gap-8 mt-10">
-                <a href="https://www.youtube.com/@CallToMore" target="_blank" class="hover:text-pink-400">YouTube</a>
-                <a href="https://www.instagram.com/vividassistpro" target="_blank" class="hover:text-pink-400">Instagram</a>
+                <p>Phone: 786-385-7888</p>
             </div>
         </div>
     </section>
@@ -336,25 +251,8 @@
     </footer>
 
     <script>
-        // Mobile menu toggle
         document.getElementById('menu-toggle').addEventListener('click', () => {
             document.getElementById('mobile-menu').classList.toggle('hidden');
-        });
-        
-        // Smooth scroll for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                if (this.getAttribute('href') !== '#') {
-                    e.preventDefault();
-                    const target = document.querySelector(this.getAttribute('href'));
-                    if (target) {
-                        target.scrollIntoView({
-                            behavior: 'smooth',
-                            block: 'start'
-                        });
-                    }
-                }
-            });
         });
     </script>
 </body>
