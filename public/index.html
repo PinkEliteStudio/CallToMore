@@ -8,40 +8,61 @@
     <meta name="author" content="Rhina Delgado">
     <title>Call To More | Cheerleader of Hope with Rhina Delgado</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    
+   
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@400;500;600&display=swap');
-        
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@400;500;600&display=swap');
+       
         .hero-banner {
-            background: linear-gradient(135deg, 
-                #F8C1D9 0%,      /* Main Pastel Pink */
-                #F8C1D9 60%, 
-                #FFE4B8 70%,     /* Soft touch of pastel yellow */
-                #B8E0F0 80%,     /* Soft touch of pastel blue */
-                #C8EFD3 90%      /* Soft touch of pastel green */
-            );
+            background-color: #f7cce3;
         }
-
+        
         .accent-pink { color: #F472B6; }
         .accent-yellow { color: #FACC15; }
         
-        .hover-pink { transition: all 0.3s ease; }
-        .hover-pink:hover { 
-            color: #F472B6; 
-            transform: translateY(-2px);
+        /* Significantly Larger Logo */
+        .logo {
+            height: 130px;          /* Much larger on desktop */
+            max-width: 480px;
+            width: auto;
+            object-fit: contain;
         }
         
+        @media (max-width: 768px) {
+            .logo {
+                height: 95px;       /* Larger on mobile */
+            }
+        }
+        
+        .title-font {
+            font-family: 'Playfair Display', serif;
+            font-weight: 900;
+            letter-spacing: -0.02em;
+        }
+        
+        .hover-pink { 
+            transition: all 0.3s ease; 
+        }
+        .hover-pink:hover {
+            color: #F472B6;
+            transform: translateY(-2px);
+        }
+       
         .card {
             transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
         }
         .card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+            transform: translateY(-8px);
+            box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.08), 0 8px 10px -6px rgb(0 0 0 / 0.08);
         }
-        
+       
         .bible-quote {
             font-style: italic;
             border-left: 6px solid #F472B6;
+        }
+
+        .section-title {
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
         }
     </style>
 </head>
@@ -50,29 +71,25 @@
     <!-- Header -->
     <header class="bg-white shadow-md fixed top-0 w-full z-50">
         <div class="container mx-auto px-6 py-5 flex items-center justify-between">
-            <div class="flex items-center gap-3">
-                <img src="https://raw.githubusercontent.com/PINKEliteStudio/vividassistpro/main/vividlogo.png" 
-                     alt="Vivid Assist Pro" class="h-10 object-contain">
-                <div class="h-6 w-px bg-gray-300"></div>
-                <div>
-                    <span class="text-xl font-bold accent-pink">Call To More</span>
-                    <p class="text-[10px] text-gray-500 -mt-1">by Vivid Assist Pro</p>
-                </div>
+            <div>
+                <img src="https://raw.githubusercontent.com/PINKEliteStudio/vividassistpro/main/calltomorelogo.png"
+                     alt="Call To More" 
+                     class="logo">
             </div>
-            
-            <nav class="hidden md:flex items-center space-x-8 text-sm font-medium">
+           
+            <nav class="hidden md:flex items-center space-x-9 text-sm font-medium">
                 <a href="#home" class="hover-pink">Home</a>
                 <a href="#message" class="hover-pink">My Message</a>
                 <a href="#teachings" class="hover-pink">Teachings</a>
                 <a href="#newsletter" class="hover-pink">Newsletter</a>
                 <a href="#contact" class="hover-pink">Connect</a>
             </nav>
-            
-            <a href="https://calendly.com/pinkelitestudio" 
-               class="hidden md:block bg-[#F472B6] text-white px-6 py-3 rounded-full font-medium hover:bg-pink-600 transition-all text-sm">
+           
+            <a href="https://calendly.com/pinkelitestudio"
+               class="hidden md:block bg-[#F472B6] hover:bg-pink-600 text-white px-7 py-3 rounded-full font-medium transition-all text-sm">
                 Book a Call
             </a>
-            
+           
             <button id="menu-toggle" class="md:hidden text-gray-700 focus:outline-none">
                 <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
@@ -80,6 +97,7 @@
             </button>
         </div>
         
+        <!-- Mobile Menu -->
         <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
             <div class="px-6 py-6 flex flex-col space-y-5 text-base">
                 <a href="#home" class="hover-pink">Home</a>
@@ -87,64 +105,55 @@
                 <a href="#teachings" class="hover-pink">Teachings</a>
                 <a href="#newsletter" class="hover-pink">Newsletter</a>
                 <a href="#contact" class="hover-pink">Connect</a>
-                <a href="https://calendly.com/pinkelitestudio" class="bg-[#F472B6] text-white px-6 py-3 rounded-full text-center font-medium">
+                <a href="https://calendly.com/pinkelitestudio" 
+                   class="bg-[#F472B6] text-white px-6 py-3 rounded-full text-center font-medium">
                     Book a Call
                 </a>
             </div>
         </div>
     </header>
 
-    <!-- Hero - Solid Pastel Pink with Gentle Touches -->
+    <!-- Hero -->
     <section id="home" class="hero-banner min-h-screen flex items-center relative pt-20">
         <div class="container mx-auto px-6 relative z-10 text-center text-gray-800">
-            <div class="max-w-3xl mx-auto">
-                <div class="inline-flex items-center gap-2 bg-white/70 backdrop-blur-md px-5 py-2 rounded-full text-sm font-medium mb-8 shadow-sm">
+            <div class="max-w-4xl mx-auto">
+                <div class="inline-flex items-center gap-2 bg-white/80 backdrop-blur-md px-6 py-2.5 rounded-full text-sm font-medium mb-10 shadow">
                     <span class="w-2.5 h-2.5 bg-green-400 rounded-full animate-pulse"></span>
                     A New Season of Purpose & Hope
                 </div>
-                
-                <h1 class="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6">
-                    God Has Called You<br>To <span class="accent-yellow">MORE</span>
+               
+                <h1 class="title-font text-6xl md:text-7xl lg:text-8xl leading-none mb-8">
+                    God Has Called You<br>To <span class="italic accent-yellow">MORE</span>
                 </h1>
-                
-                <p class="text-xl md:text-2xl max-w-2xl mx-auto mb-10 text-gray-700">
+               
+                <p class="text-2xl md:text-3xl text-gray-700 max-w-3xl mx-auto leading-tight mb-12">
                     I'm Rhina Delgado, your cheerleader of hope.<br>
-                    After my divorce, God restored my joy and showed me His favor. 
-                    Now I help you seek Him first, do the work, and walk into your calling.
+                    After my divorce, God restored my joy and showed me His favor.
                 </p>
-                
-                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+               
+                <div class="flex flex-col sm:flex-row gap-5 justify-center">
                     <a href="https://www.youtube.com/@CallToMore" target="_blank"
-                       class="bg-white text-gray-900 px-10 py-4 rounded-full font-semibold text-lg shadow-md hover:shadow-xl transition-all flex items-center justify-center gap-2">
+                       class="bg-white text-gray-900 px-10 py-4 rounded-full font-semibold text-lg shadow-md hover:shadow-xl transition-all flex items-center justify-center gap-3">
                         Watch on YouTube
                     </a>
-                    
-                    <a href="#newsletter" 
-                       class="border-2 border-white bg-transparent text-gray-800 px-10 py-4 rounded-full font-semibold text-lg hover:bg-white hover:text-gray-900 transition-all">
+                   
+                    <a href="#newsletter"
+                       class="border-2 border-gray-800 text-gray-800 px-10 py-4 rounded-full font-semibold text-lg hover:bg-gray-800 hover:text-white transition-all">
                         Join the Newsletter
                     </a>
                 </div>
             </div>
         </div>
-
-        <!-- Vivid Assist Pro Side Box -->
-        <div class="hidden xl:block absolute bottom-16 right-12 bg-white/80 backdrop-blur-md p-6 rounded-3xl shadow-lg max-w-[260px]">
-            <div class="text-sm">
-                <div class="font-semibold accent-pink mb-1">Vivid Assist Pro</div>
-                <p class="text-gray-600 text-[13px]">Supporting this new season of purpose-driven ministry with visionary branding.</p>
-                <a href="https://vividassistpro.com" class="text-pink-500 text-xs mt-4 inline-block hover:underline">Learn more →</a>
-            </div>
-        </div>
     </section>
 
     <!-- Bible Verse -->
-    <section class="py-16 bg-white">
+    <section class="py-20 bg-white">
         <div class="container mx-auto px-6 max-w-3xl text-center">
-            <div class="bible-quote p-10 bg-[#FFF0F5] rounded-3xl">
-                <p class="text-2xl leading-relaxed text-gray-700">
+            <div class="bible-quote p-12 bg-[#FFF0F5] rounded-3xl">
+                <p class="text-3xl leading-relaxed text-gray-700">
                     “For You, O LORD, bless the righteous man; You surround him with favor as with a shield.”
                 </p>
-                <p class="text-pink-600 mt-6 font-medium">— Psalm 5:12 AMP</p>
+                <p class="text-pink-600 mt-8 font-medium text-lg">— Psalm 5:12 AMP</p>
             </div>
         </div>
     </section>
@@ -154,12 +163,13 @@
         <div class="container mx-auto px-6">
             <div class="grid md:grid-cols-12 gap-12 items-center">
                 <div class="md:col-span-5">
-                    <img src="https://raw.githubusercontent.com/PINKEliteStudio/vividassistpro/main/rhinaimage.jpg" 
-                         alt="Rhina Delgado" class="w-full rounded-3xl shadow-2xl object-cover">
+                    <img src="https://raw.githubusercontent.com/PINKEliteStudio/vividassistpro/main/rhinaimage.jpg"
+                         alt="Rhina Delgado" 
+                         class="w-full rounded-3xl shadow-2xl object-cover">
                 </div>
                 <div class="md:col-span-7">
-                    <h2 class="text-4xl font-bold mb-6">From Broken to Blessed</h2>
-                    <div class="prose text-lg text-gray-600 space-y-6">
+                    <h2 class="section-title text-5xl font-bold mb-8">From Broken to Blessed</h2>
+                    <div class="prose text-lg text-gray-600 space-y-6 leading-relaxed">
                         <p>After my divorce, my hope, joy, and smile were taken from me. But when I got serious with God, everything changed.</p>
                         <p>I learned there are no shortcuts to success. We must be willing to do the work and grind with faith.</p>
                         <p class="font-semibold accent-pink">
@@ -177,43 +187,46 @@
     <section id="teachings" class="py-20 bg-white">
         <div class="container mx-auto px-6">
             <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold mb-4">Faith-Filled Encouragement</h2>
-                <p class="text-gray-600">Practical teachings to help you grow in faith and purpose</p>
+                <h2 class="section-title text-5xl font-bold mb-4">Teachings of Hope</h2>
+                <p class="text-gray-600 text-xl">Practical faith and encouragement for your daily walk</p>
             </div>
-            
+           
             <div class="grid md:grid-cols-3 gap-8">
-                <div class="card bg-white border border-pink-100 p-8 rounded-3xl">
-                    <div class="h-12 w-12 bg-pink-100 rounded-2xl flex items-center justify-center mb-6 text-3xl">🙏</div>
-                    <h3 class="text-2xl font-semibold mb-3">Seek God First</h3>
-                    <p class="text-gray-600">No shortcuts. Build your foundation with intentional time with the Father.</p>
+                <div class="card bg-white border border-pink-100 p-10 rounded-3xl">
+                    <div class="h-14 w-14 bg-pink-100 rounded-2xl flex items-center justify-center mb-8 text-4xl">🙏</div>
+                    <h3 class="text-3xl font-semibold mb-4">Seek God First</h3>
+                    <p class="text-gray-600">No shortcuts. Build your life on intentional time with the Father.</p>
                 </div>
-                <div class="card bg-white border border-blue-100 p-8 rounded-3xl">
-                    <div class="h-12 w-12 bg-blue-100 rounded-2xl flex items-center justify-center mb-6 text-3xl">🛡️</div>
-                    <h3 class="text-2xl font-semibold mb-3">God's Favor</h3>
+                <div class="card bg-white border border-blue-100 p-10 rounded-3xl">
+                    <div class="h-14 w-14 bg-blue-100 rounded-2xl flex items-center justify-center mb-8 text-4xl">🛡️</div>
+                    <h3 class="text-3xl font-semibold mb-4">God's Favor</h3>
                     <p class="text-gray-600">Surrounded by favor as with a shield — Psalm 5:12</p>
                 </div>
-                <div class="card bg-white border border-green-100 p-8 rounded-3xl">
-                    <div class="h-12 w-12 bg-green-100 rounded-2xl flex items-center justify-center mb-6 text-3xl">🌱</div>
-                    <h3 class="text-2xl font-semibold mb-3">Restoration</h3>
-                    <p class="text-gray-600">God restores what was lost and brings beauty from every pain.</p>
+                <div class="card bg-white border border-green-100 p-10 rounded-3xl">
+                    <div class="h-14 w-14 bg-green-100 rounded-2xl flex items-center justify-center mb-8 text-4xl">🌱</div>
+                    <h3 class="text-3xl font-semibold mb-4">Restoration</h3>
+                    <p class="text-gray-600">God restores what was lost and brings beauty from ashes.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Newsletter -->
-    <section id="newsletter" class="py-20 bg-gradient-to-br from-[#F8C1D9] to-[#F8C1D9]">
+    <section id="newsletter" class="py-20 bg-[#f7cce3]">
         <div class="container mx-auto px-6 max-w-2xl text-center">
-            <h2 class="text-4xl font-bold mb-4">Join the Call To More Family</h2>
-            <p class="text-xl text-gray-700 mb-10">Receive weekly encouragement, Bible insights, and faith reminders straight to your inbox.</p>
-            
-            <form class="space-y-4" onsubmit="alert('Thank you! This is a demo. Connect your CRM when ready.'); return false;">
+            <h2 class="section-title text-5xl font-bold mb-6">Stay Encouraged</h2>
+            <p class="text-xl text-gray-700 mb-10">Receive weekly Bible insights, encouragement, and reminders to seek God first.</p>
+           
+            <form class="space-y-5" onsubmit="alert('Thank you! This is a demo. Connect your CRM when ready.'); return false;">
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <input type="text" placeholder="First Name" class="px-6 py-4 rounded-2xl border border-white focus:outline-none focus:border-pink-400 bg-white/90">
-                    <input type="email" placeholder="Your Email Address" required class="px-6 py-4 rounded-2xl border border-white focus:outline-none focus:border-pink-400 bg-white/90">
+                    <input type="text" placeholder="First Name" 
+                           class="px-7 py-4 rounded-2xl border border-white focus:outline-none focus:border-pink-400 bg-white/90 text-lg">
+                    <input type="email" placeholder="Your Email Address" required 
+                           class="px-7 py-4 rounded-2xl border border-white focus:outline-none focus:border-pink-400 bg-white/90 text-lg">
                 </div>
-                <button type="submit" class="w-full bg-gray-900 hover:bg-black text-white py-4 rounded-2xl font-semibold text-lg transition">
-                    Subscribe Now - It's Free
+                <button type="submit" 
+                        class="w-full bg-gray-900 hover:bg-black text-white py-5 rounded-2xl font-semibold text-lg transition">
+                    Subscribe to the Newsletter
                 </button>
             </form>
         </div>
@@ -222,31 +235,33 @@
     <!-- Contact -->
     <section id="contact" class="py-20 bg-gray-900 text-white">
         <div class="container mx-auto px-6 text-center">
-            <h2 class="text-4xl font-bold mb-6">Let's Walk This Out Together</h2>
-            <p class="max-w-md mx-auto text-gray-300 mb-10">Ready to step into your “more”? I'm here to encourage and support you.</p>
-            
-            <a href="https://calendly.com/pinkelitestudio" 
-               class="inline-block bg-[#F472B6] text-white px-10 py-4 rounded-full text-lg font-semibold hover:bg-pink-500 transition">
+            <h2 class="section-title text-5xl font-bold mb-6 text-white">Let's Walk This Out Together</h2>
+            <p class="max-w-md mx-auto text-gray-300 mb-12 text-lg">
+                Ready to step into your “more”? I'm here to cheer you on.
+            </p>
+           
+            <a href="https://calendly.com/pinkelitestudio"
+               class="inline-block bg-[#F472B6] hover:bg-pink-600 text-white px-12 py-5 rounded-full text-xl font-semibold transition">
                 Book a Discovery Call
             </a>
-            
-            <div class="mt-12 text-sm text-gray-400 space-y-1">
-                <p>Email: <a href="mailto:pinkeliteva@gmail.com" class="hover:text-pink-300">pinkeliteva@gmail.com</a></p>
-                <p>Phone: 786-385-7888</p>
+           
+            <div class="mt-14 text-gray-400">
+                <p class="text-lg">Email: <a href="mailto:pinkeliteva@gmail.com" class="hover:text-pink-300">pinkeliteva@gmail.com</a></p>
+                <p class="text-lg mt-2">Phone: 786-385-7888</p>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="bg-gray-950 text-gray-400 py-12">
+    <footer class="bg-gray-950 text-gray-400 py-16">
         <div class="container mx-auto px-6 text-center">
-            <div class="flex items-center justify-center gap-3 mb-6">
-                <img src="https://raw.githubusercontent.com/PINKEliteStudio/vividassistpro/main/vividlogo.png" 
-                     alt="Vivid Assist Pro" class="h-8 opacity-75">
-                <span class="text-white font-medium">Call To More</span>
+            <div class="flex justify-center mb-8">
+                <img src="https://raw.githubusercontent.com/PINKEliteStudio/vividassistpro/main/calltomorelogo.png"
+                     alt="Call To More" 
+                     class="h-16 object-contain">
             </div>
             <p class="text-sm">© 2026 Rhina Delgado • Call To More. All rights reserved.</p>
-            <p class="text-xs mt-4">Built with love and faith • Powered by Vivid Assist Pro</p>
+            <p class="text-xs mt-6 text-gray-500">Built with love and faith</p>
         </div>
     </footer>
 
