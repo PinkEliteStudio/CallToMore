@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>7-Day Heartbreak Reset | Call To More</title>
+
+  <meta name="description" content="The 7-Day Heartbreak Reset by Rhina Delgado — a faith-based healing journey for women overcoming heartbreak, betrayal, and emotional pain.">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+
+    h1, h2, h3 {
+      font-family: 'Playfair Display', serif;
+    }
+
+    .hero-bg {
+      background: linear-gradient(to bottom, #fde7f3, #f7cce3);
+    }
+
+    .pink-btn {
+      transition: all 0.3s ease;
+    }
+
+    .pink-btn:hover {
+      transform: translateY(-3px);
+    }
+  </style>
+</head>
+
+<body class="bg-[#fff0f5] text-gray-800">
+
+  <!-- HEADER -->
+  <header class="bg-white shadow-sm sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+
+      <a href="/index.html">
+        <img
+          src="https://raw.githubusercontent.com/PINKEliteStudio/vividassistpro/main/calltomorelogo.png"
+          alt="Call To More"
+          class="h-16 md:h-20"
+        >
+      </a>
+
+      <a href="/index.html"
+         class="text-[#c0567c] font-semibold hover:underline">
+        ← Back Home
+      </a>
+
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero-bg py-16 md:py-24">
+    <div class="max-w-5xl mx-auto px-6 text-center">
+
+      <h1 class="text-5xl md:text-7xl font-bold leading-tight text-[#5c4033] mb-8">
+        Struggling After Heartbreak?
+      </h1>
+
+      <p class="text-2xl md:text-4xl text-[#c0567c] font-medium leading-snug mb-8">
+        The Exact 7-Day Reset That Took Me From Betrayal to God's Restoration
+      </p>
+
+      <p class="text-lg md:text-xl max-w-3xl mx-auto text-gray-700 mb-12">
+        A faith-based healing experience designed to help you renew your mind,
+        restore your confidence, reconnect with God, and heal emotionally.
+      </p>
+
+      <!-- VIDEO SECTION -->
+      <div class="bg-white border-4 border-pink-200 rounded-3xl aspect-video shadow-xl flex items-center justify-center mb-10">
+        <div class="text-center px-8">
+          <p class="text-2xl mb-3">🎥</p>
+          <p class="text-lg text-[#c0567c] font-medium">
+            Add Your YouTube Sales Video Here
+          </p>
+        </div>
+      </div>
+
+      <!-- COUNTDOWN -->
+      <div class="inline-flex flex-col md:flex-row items-center gap-4 bg-white rounded-3xl shadow-2xl px-10 py-6 border border-pink-200 mb-10">
+        <span class="text-lg font-semibold text-gray-700">
+          Special Price Ends In
+        </span>
+
+        <div id="countdown"
+             class="text-4xl font-bold text-[#c0567c]">
+          7d 00h 00m
+        </div>
+      </div>
+
+      <!-- CTA -->
+      <div class="mb-6">
+        <a href="https://buy.stripe.com/YOUR_STRIPE_LINK_HERE"
+           class="pink-btn inline-block bg-[#c0567c] hover:bg-[#9c2d5a] text-white text-xl md:text-2xl font-bold px-12 py-6 rounded-3xl shadow-2xl">
+          Yes, I'm Ready To Heal – $47
+        </a>
+      </div>
+
+      <p class="text-sm text-gray-600">
+        Instant Access • PDF Journal • Audio Teachings • Guided Healing
+      </p>
+
+    </div>
+  </section>
+
+  <!-- WHAT YOU RECEIVE -->
+  <section class="py-20">
+    <div class="max-w-6xl mx-auto px-6">
+
+      <div class="text-center mb-16">
+        <h2 class="text-4xl md:text-5xl font-bold text-[#5c4033] mb-6">
+          What You'll Experience
+        </h2>
+
+        <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+          A simple but powerful framework to help you reset emotionally,
+          spiritually, and mentally.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-10">
+
+        <!-- LEFT CARD -->
+        <div class="bg-white rounded-3xl shadow-xl p-10">
+
+          <h3 class="text-3xl font-bold text-[#c0567c] mb-8">
+            In Just 7 Days You Will:
+          </h3>
+
+          <ul class="space-y-6 text-lg leading-relaxed">
+
+            <li>
+              <strong class="text-[#c0567c]">DO</strong>
+              — One intentional healing action daily
+            </li>
+
+            <li>
+              <strong class="text-[#c0567c]">GET</strong>
+              — Biblical promises and encouragement
+            </li>
+
+            <li>
+              <strong class="text-[#c0567c]">FIND</strong>
+              — The emotional lies keeping you stuck
+            </li>
+
+            <li>
+              <strong class="text-[#c0567c]">LEARN</strong>
+              — Biblical truth and mindset renewal
+            </li>
+
+            <li>
+              <strong class="text-[#c0567c]">HEALING</strong>
+              — Peace, clarity, confidence, and restoration
+            </li>
+
+          </ul>
+        </div>
+
+        <!-- TESTIMONIAL -->
+        <div class="bg-white rounded-3xl shadow-xl p-10 flex flex-col justify-center">
+
+          <p class="text-2xl italic leading-relaxed text-[#5c4033] mb-8">
+            “This reset helped me reconnect with God, heal emotionally,
+            and finally breathe again.”
+          </p>
+
+          <p class="text-gray-600">
+            — A woman who walked through heartbreak and found restoration
+          </p>
+
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="py-20 bg-[#f7cce3]">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+
+      <h2 class="text-4xl md:text-5xl font-bold text-[#5c4033] mb-8">
+        Your Healing Journey Starts Today
+      </h2>
+
+      <p class="text-xl text-gray-700 mb-10">
+        Stop carrying the pain alone. God still has purpose, joy,
+        and restoration ahead of you.
+      </p>
+
+      <a href="https://buy.stripe.com/YOUR_STRIPE_LINK_HERE"
+         class="pink-btn inline-block bg-[#c0567c] hover:bg-[#9c2d5a] text-white text-xl md:text-2xl font-bold px-14 py-6 rounded-3xl shadow-2xl">
+        Start My 7-Day Reset – $47
+      </a>
+
+      <p class="mt-6 text-sm text-gray-700">
+        Includes journal prompts, teachings, healing exercises, and encouragement.
+      </p>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-gray-900 text-gray-300 py-12">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+
+      <img
+        src="https://raw.githubusercontent.com/PINKEliteStudio/vividassistpro/main/calltomorelogo.png"
+        alt="Call To More"
+        class="h-14 mx-auto mb-6"
+      >
+
+      <p class="mb-3">
+        © 2026 Call To More • Rhina Delgado
+      </p>
+
+      <p class="text-sm text-gray-500">
+        Healing • Faith • Restoration • Purpose
+      </p>
+
+    </div>
+  </footer>
+
+  <!-- COUNTDOWN SCRIPT -->
+  <script>
+    function startCountdown() {
+
+      const endDate = new Date();
+      endDate.setDate(endDate.getDate() + 7);
+
+      const countdownEl = document.getElementById('countdown');
+
+      function updateCountdown() {
+
+        const now = new Date().getTime();
+        const distance = endDate.getTime() - now;
+
+        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+
+        const hours = Math.floor(
+          (distance % (1000 * 60 * 60 * 24)) /
+          (1000 * 60 * 60)
+        );
+
+        const minutes = Math.floor(
+          (distance % (1000 * 60 * 60)) /
+          (1000 * 60)
+        );
+
+        countdownEl.innerHTML =
+          `${days}d ${hours}h ${minutes}m`;
+      }
+
+      updateCountdown();
+
+      setInterval(updateCountdown, 60000);
+    }
+
+    startCountdown();
+  </script>
+
+</body>
+</html>
