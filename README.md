@@ -1,2 +1,2 @@
-# VividAssist
-Empowering busy professionals with expert virtual support
+# calltomore
+Empowering busy professionals with expert biblical foundation 
