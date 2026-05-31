@@ -33,7 +33,7 @@
         <img
           src="https://raw.githubusercontent.com/PINKEliteStudio/vividassistpro/main/calltomorelogo.png"
           alt="Call To More"
-          class="h-16 md:h-20"
+          class="h-24 md:h-28"   <!-- Bigger logo -->
         >
       </a>
       <a href="/index.html"
@@ -42,6 +42,7 @@
       </a>
     </div>
   </header>
+
   <!-- HERO -->
   <section class="hero-bg py-16 md:py-24">
     <div class="max-w-5xl mx-auto px-6 text-center">
@@ -55,13 +56,26 @@
         A faith-based healing experience designed to help you renew your mind,
         restore your confidence, reconnect with God, and heal emotionally.
       </p>
-     <!-- VIDEO SECTION -->
+
+      <!-- VIDEO SECTION -->
       <div class="bg-white border-4 border-pink-200 rounded-3xl aspect-video shadow-xl mb-10 overflow-hidden">
         <video class="w-full h-full rounded-3xl" controls autoplay muted loop>
           <source src="promo-video.mp4" type="video/mp4">
           Your browser does not support the video tag.
         </video>
       </div>
+
+      <!-- COUNTDOWN -->
+      <div class="inline-flex flex-col md:flex-row items-center gap-4 bg-white rounded-3xl shadow-2xl px-10 py-6 border border-pink-200 mb-10">
+        <span class="text-lg font-semibold text-gray-700">
+          Special Price Ends In
+        </span>
+        <div id="countdown"
+             class="text-4xl font-bold text-[#c0567c]">
+          7d 00h 00m
+        </div>
+      </div>
+
       <!-- CTA -->
       <div class="mb-6">
         <a href="https://buy.stripe.com/YOUR_STRIPE_LINK_HERE"
@@ -74,6 +88,7 @@
       </p>
     </div>
   </section>
+
   <!-- WHAT YOU RECEIVE -->
   <section class="py-20">
     <div class="max-w-6xl mx-auto px-6">
@@ -128,6 +143,7 @@
       </div>
     </div>
   </section>
+
   <!-- FINAL CTA -->
   <section class="py-20 bg-[#f7cce3]">
     <div class="max-w-4xl mx-auto px-6 text-center">
@@ -147,13 +163,14 @@
       </p>
     </div>
   </section>
+
   <!-- FOOTER -->
   <footer class="bg-gray-900 text-gray-300 py-12">
     <div class="max-w-4xl mx-auto px-6 text-center">
       <img
         src="https://raw.githubusercontent.com/PINKEliteStudio/vividassistpro/main/calltomorelogo.png"
         alt="Call To More"
-        class="h-14 mx-auto mb-6"
+        class="h-20 mx-auto mb-6"   <!-- Bigger footer logo -->
       >
       <p class="mb-3">
         © 2026 Call To More • Rhina Delgado
@@ -163,6 +180,7 @@
       </p>
     </div>
   </footer>
+
   <!-- COUNTDOWN SCRIPT -->
   <script>
     function startCountdown() {
