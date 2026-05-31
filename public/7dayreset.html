@@ -64,18 +64,6 @@
           Your browser does not support the video tag.
         </video>
       </div>
-
-      <!-- COUNTDOWN -->
-      <div class="inline-flex flex-col md:flex-row items-center gap-4 bg-white rounded-3xl shadow-2xl px-10 py-6 border border-pink-200 mb-10">
-        <span class="text-lg font-semibold text-gray-700">
-          Special Price Ends In
-        </span>
-        <div id="countdown"
-             class="text-4xl font-bold text-[#c0567c]">
-          7d 00h 00m
-        </div>
-      </div>
-
       <!-- CTA -->
       <div class="mb-6">
         <a href="https://buy.stripe.com/YOUR_STRIPE_LINK_HERE"
@@ -181,31 +169,5 @@
     </div>
   </footer>
 
-  <!-- COUNTDOWN SCRIPT -->
-  <script>
-    function startCountdown() {
-      const endDate = new Date();
-      endDate.setDate(endDate.getDate() + 7);
-      const countdownEl = document.getElementById('countdown');
-      function updateCountdown() {
-        const now = new Date().getTime();
-        const distance = endDate.getTime() - now;
-        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-        const hours = Math.floor(
-          (distance % (1000 * 60 * 60 * 24)) /
-          (1000 * 60 * 60)
-        );
-        const minutes = Math.floor(
-          (distance % (1000 * 60 * 60)) /
-          (1000 * 60)
-        );
-        countdownEl.innerHTML =
-          `${days}d ${hours}h ${minutes}m`;
-      }
-      updateCountdown();
-      setInterval(updateCountdown, 60000);
-    }
-    startCountdown();
-  </script>
 </body>
 </html>
