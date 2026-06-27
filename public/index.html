@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <meta name="description" content="Call To More with Rhina Delgado — Your Cheerleader of Hope. 7-Day Heartbreak Reset + Biblical Teachings for Restoration">
+    <meta name="description" content="Call To More with Rhina Delgado — Your Cheerleader of Hope. Get the FREE 7-Day Heartbreak Reset + Biblical Teachings for Restoration">
     <meta name="keywords" content="Call To More, faith, heartbreak reset, restoration, Rhina Delgado">
     <meta name="author" content="Rhina Delgado">
-   
+
     <!-- Pinterest Domain Verification -->
     <meta name="p:domain_verify" content="39a071a07c6dce252fd95137ce642464"/>
-   
+
     <!-- Pinterest Tag -->
     <script>
     !function(e){if(!window.pintrk){window.pintrk = function () {
@@ -30,102 +30,86 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@400;500;600&display=swap');
-    
-        .hero-banner {
-            background-color: #f7cce3;
-        }
-     
+
+        .hero-banner { background-color: #f7cce3; }
         .accent-pink { color: #F472B6; }
         .accent-yellow { color: #FACC15; }
-     
+
         .logo {
             height: 180px;
             max-width: 480px;
             width: auto;
             object-fit: contain;
         }
-     
-        @media (max-width: 768px) {
-            .logo {
-                height: 130px;
-            }
-        }
-     
+        @media (max-width: 768px) { .logo { height: 130px; } }
+
         .title-font {
             font-family: 'Playfair Display', serif;
             font-weight: 900;
             letter-spacing: -0.02em;
         }
-     
-        .hover-pink {
-            transition: all 0.3s ease;
-        }
-        .hover-pink:hover {
-            color: #F472B6;
-            transform: translateY(-2px);
-        }
-    
-        .card {
-            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-        }
+
+        .hover-pink { transition: all 0.3s ease; }
+        .hover-pink:hover { color: #F472B6; transform: translateY(-2px); }
+
+        .card { transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); }
         .card:hover {
             transform: translateY(-8px);
             box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.08), 0 8px 10px -6px rgb(0 0 0 / 0.08);
         }
-    
-        .bible-quote {
-            font-style: italic;
-            border-left: 6px solid #F472B6;
-        }
-        .section-title {
-            font-family: 'Playfair Display', serif;
-            font-weight: 700;
+
+        .bible-quote { font-style: italic; border-left: 6px solid #F472B6; }
+        .section-title { font-family: 'Playfair Display', serif; font-weight: 700; }
+
+        .pulse-badge { animation: pulse 2s infinite; }
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
         }
     </style>
 </head>
 <body class="bg-[#FFF0F5] font-sans text-gray-800">
-    <!-- Header - Smaller white bar -->
+    <!-- Header -->
     <header class="bg-white shadow-md fixed top-0 w-full z-50">
-        <div class="container mx-auto px-6 py-3 flex items-center justify-between">   <!-- Changed py-5 to py-3 -->
+        <div class="container mx-auto px-6 py-3 flex items-center justify-between">
             <div>
                 <img src="https://raw.githubusercontent.com/PINKEliteStudio/vividassistpro/main/calltomorelogo.png"
-                     alt="Call To More"
-                     class="logo">
+                     alt="Call To More" class="logo">
             </div>
-        
+
             <nav class="hidden md:flex items-center space-x-8 text-sm font-medium">
                 <a href="#home" class="hover-pink">Home</a>
                 <a href="#message" class="hover-pink">My Message</a>
                 <a href="#teachings" class="hover-pink">Teachings</a>
-                <a href="/7dayreset" class="hover-pink font-semibold text-[#F472B6]">7-Day Reset</a>
-                <a href="#newsletter" class="hover-pink">Newsletter</a>
+                <a href="#free-reset" class="hover-pink font-semibold text-[#F472B6]">Free 7-Day Reset</a>
+                <a href="#book" class="hover-pink">Book</a>
                 <a href="#contact" class="hover-pink">Connect</a>
             </nav>
-        
-            <a href="https://calendly.com/pinkelitestudio"
+
+            <a href="#free-reset"
                class="hidden md:block bg-[#F472B6] hover:bg-pink-600 text-white px-7 py-3 rounded-full font-medium transition-all text-sm">
-                Book a Call
+                Get the Free Guide
             </a>
-        
+
             <button id="menu-toggle" class="md:hidden text-gray-700 focus:outline-none">
                 <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
                 </svg>
             </button>
         </div>
-     
+
         <!-- Mobile Menu -->
         <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
             <div class="px-6 py-6 flex flex-col space-y-5 text-base">
                 <a href="#home" class="hover-pink">Home</a>
                 <a href="#message" class="hover-pink">My Message</a>
                 <a href="#teachings" class="hover-pink">Teachings</a>
-                <a href="/7dayreset" class="hover-pink font-semibold text-[#F472B6]">7-Day Reset</a>
-                <a href="#newsletter" class="hover-pink">Newsletter</a>
+                <a href="#free-reset" class="hover-pink font-semibold text-[#F472B6]">Free 7-Day Reset</a>
+                <a href="#book" class="hover-pink">Book</a>
                 <a href="#contact" class="hover-pink">Connect</a>
-                <a href="https://calendly.com/pinkelitestudio"
+                <a href="#free-reset"
                    class="bg-[#F472B6] text-white px-6 py-3 rounded-full text-center font-medium">
-                    Book a Call
+                    Get the Free Guide
                 </a>
             </div>
         </div>
@@ -136,29 +120,35 @@
         <div class="container mx-auto px-6 relative z-10 text-center text-gray-800">
             <div class="max-w-4xl mx-auto">
                 <div class="inline-flex items-center gap-2 bg-white/80 backdrop-blur-md px-6 py-2.5 rounded-full text-sm font-medium mb-10 shadow">
-                    <span class="w-2.5 h-2.5 bg-green-400 rounded-full animate-pulse"></span>
+                    <span class="w-2.5 h-2.5 bg-green-400 rounded-full pulse-badge"></span>
                     A New Season of Purpose & Hope
                 </div>
-            
+
                 <h1 class="title-font text-6xl md:text-7xl lg:text-8xl leading-none mb-8">
                     God Has Called You<br>To <span class="italic" style="color: #DB2777;">MORE</span>
                 </h1>
-            
-                <p class="text-2xl md:text-3xl text-gray-700 max-w-3xl mx-auto leading-tight mb-12">
+
+                <p class="text-2xl md:text-3xl text-gray-700 max-w-3xl mx-auto leading-tight mb-6">
                     I'm Rhina Delgado, your cheerleader of hope.<br>
                     After my divorce, God restored my joy and showed me His favor.
                 </p>
-            
+
+                <p class="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto mb-10">
+                    If your heart is broken and you don't know where to start —
+                    start here. <span class="font-semibold accent-pink">It's free.</span>
+                </p>
+
                 <div class="flex flex-col sm:flex-row gap-5 justify-center">
-                    <a href="/7dayreset"
+                    <a href="#free-reset"
                        class="bg-[#F472B6] text-white px-10 py-5 rounded-full font-semibold text-xl shadow-md hover:shadow-xl transition-all">
-                        Start 7-Day Heartbreak Reset → $47
+                        Get Your Free 7-Day Heartbreak Reset →
                     </a>
                     <a href="https://www.youtube.com/@CallToMore" target="_blank"
                        class="bg-white text-gray-900 px-10 py-5 rounded-full font-semibold text-xl shadow-md hover:shadow-xl transition-all">
                         Watch on YouTube
                     </a>
                 </div>
+                <p class="text-sm text-gray-500 mt-5">No cost. Instant access. Delivered straight to your inbox.</p>
             </div>
         </div>
     </section>
@@ -168,7 +158,7 @@
         <div class="container mx-auto px-6 max-w-3xl text-center">
             <div class="bible-quote p-12 bg-[#FFF0F5] rounded-3xl">
                 <p class="text-3xl leading-relaxed text-gray-700">
-                    “For You, O LORD, bless the righteous man; You surround him with favor as with a shield.”
+                    "For You, O LORD, bless the righteous man; You surround him with favor as with a shield."
                 </p>
                 <p class="text-pink-600 mt-8 font-medium text-lg">— Psalm 5:12 AMP</p>
             </div>
@@ -181,21 +171,67 @@
             <div class="grid md:grid-cols-12 gap-12 items-center">
                 <div class="md:col-span-5">
                     <img src="https://raw.githubusercontent.com/PINKEliteStudio/vividassistpro/main/imagerhina.png"
-                         alt="Rhina Delgado"
-                         class="w-full rounded-3xl shadow-2xl object-cover">
+                         alt="Rhina Delgado" class="w-full rounded-3xl shadow-2xl object-cover">
                 </div>
                 <div class="md:col-span-7">
                     <h2 class="section-title text-5xl font-bold mb-8">From Broken to Blessed</h2>
                     <div class="prose text-lg text-gray-600 space-y-6 leading-relaxed">
                         <p>After my divorce, my hope, joy, and smile were taken from me. But when I got serious with God, everything changed.</p>
                         <p>I learned there are no shortcuts to success. We must be willing to do the work and grind with faith.</p>
-                        
                         <p class="font-semibold accent-pink">
-                            The foundation of Call To More is rooted in Genesis 16 — the story of Hagar. Just as God saw Hagar in the wilderness and called her by name, He sees you too. He is “El Roi” — the God who sees me.
+                            The foundation of Call To More is rooted in Genesis 16 — the story of Hagar. Just as God saw Hagar in the wilderness and called her by name, He sees you too. He is "El Roi" — the God who sees me.
                         </p>
-                        
-                        <p>Now I walk with purpose as your cheerleader of hope, encouraging you to seek God first and step into the “more” He has for you.</p>
+                        <p>Now I walk with purpose as your cheerleader of hope, encouraging you to seek God first and step into the "more" He has for you.</p>
                     </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FREE LEAD MAGNET / EMAIL CAPTURE -->
+    <section id="free-reset" class="py-24 bg-[#f7cce3]">
+        <div class="container mx-auto px-6">
+            <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <span class="inline-block bg-white text-[#DB2777] font-semibold px-5 py-2 rounded-full text-sm mb-6">100% FREE GUIDE</span>
+                    <h2 class="section-title text-4xl md:text-5xl font-bold mb-6 leading-tight">
+                        Get the Free<br>7-Day Heartbreak Reset
+                    </h2>
+                    <p class="text-lg text-gray-700 mb-6 leading-relaxed">
+                        A faith-based journey through grief, surrender, and finding God in the wilderness —
+                        for single mothers who are done surviving and ready to be restored.
+                    </p>
+                    <ul class="space-y-3 text-gray-700 mb-8">
+                        <li class="flex items-start gap-3"><span class="text-[#F472B6] text-xl">✓</span> A scripture and devotional word for each day</li>
+                        <li class="flex items-start gap-3"><span class="text-[#F472B6] text-xl">✓</span> Honest reflection questions and writing space</li>
+                        <li class="flex items-start gap-3"><span class="text-[#F472B6] text-xl">✓</span> A closing prayer to speak out loud</li>
+                        <li class="flex items-start gap-3"><span class="text-[#F472B6] text-xl">✓</span> Delivered instantly to your inbox — free, no strings attached</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white rounded-3xl shadow-2xl p-10">
+                    <h3 class="text-2xl font-bold mb-2 text-center">Send Me My Free Guide</h3>
+                    <p class="text-gray-500 text-center mb-8 text-sm">Join hundreds of women choosing God over the noise.</p>
+
+                    <!-- 
+                        KIT (ConvertKit) FORM:
+                        Replace this form with the embed code Kit gives you for your
+                        "7-Day Heartbreak Reset" form/sequence. Kit > Grow > Landing Pages & Forms
+                        > Create Form > copy embed snippet here. Kit will auto-deliver the PDF
+                        you uploaded to Netlify as the first email in the sequence.
+                    -->
+                    <form action="https://app.kit.com/forms/YOUR_FORM_ID/subscriptions"
+                          method="post" class="space-y-4" data-sv-form="YOUR_FORM_ID">
+                        <input type="text" name="fields[first_name]" placeholder="First Name"
+                               class="w-full px-6 py-4 rounded-2xl border border-gray-200 focus:outline-none focus:border-pink-400 text-lg">
+                        <input type="email" name="email_address" placeholder="Your Email Address" required
+                               class="w-full px-6 py-4 rounded-2xl border border-gray-200 focus:outline-none focus:border-pink-400 text-lg">
+                        <button type="submit"
+                                class="w-full bg-[#F472B6] hover:bg-pink-600 text-white py-5 rounded-2xl font-semibold text-lg transition">
+                            Send Me the Free Guide →
+                        </button>
+                    </form>
+                    <p class="text-xs text-gray-400 text-center mt-5">No spam. Unsubscribe anytime. Just hope, scripture, and encouragement.</p>
                 </div>
             </div>
         </div>
@@ -208,7 +244,7 @@
                 <h2 class="section-title text-5xl font-bold mb-4">Teachings of Hope</h2>
                 <p class="text-gray-600 text-xl">Practical faith and encouragement for your daily walk</p>
             </div>
-          
+
             <div class="flex justify-center gap-10 mb-12 text-xl">
                 <a href="https://www.youtube.com/@CallToMore" target="_blank" class="flex items-center gap-3 hover:text-[#F472B6]">
                     📺 <span class="font-medium">@CallToMore on YouTube</span>
@@ -237,25 +273,28 @@
         </div>
     </section>
 
-    <!-- Newsletter -->
-    <section id="newsletter" class="py-20 bg-[#f7cce3]">
-        <div class="container mx-auto px-6 max-w-2xl text-center">
-            <h2 class="section-title text-5xl font-bold mb-6">Stay Encouraged</h2>
-            <p class="text-xl text-gray-700 mb-10">Receive weekly Bible insights, encouragement, and reminders to seek God first.</p>
-        
-            <form action="https://YOURUSERNAME.usXX.api.mailchimp.com/subscribe/post?u=YOUR_USER_ID&id=YOUR_LIST_ID"
-                  method="post" class="space-y-5">
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <input type="text" name="FNAME" placeholder="First Name"
-                           class="px-7 py-4 rounded-2xl border border-white focus:outline-none focus:border-pink-400 bg-white/90 text-lg">
-                    <input type="email" name="EMAIL" placeholder="Your Email Address" required
-                           class="px-7 py-4 rounded-2xl border border-white focus:outline-none focus:border-pink-400 bg-white/90 text-lg">
+    <!-- BOOK + NEXT STEP (soft upsell, not hard sell) -->
+    <section id="book" class="py-20 bg-[#F0F9FF]">
+        <div class="container mx-auto px-6 max-w-4xl text-center">
+            <h2 class="section-title text-4xl md:text-5xl font-bold mb-6">Ready to Go Deeper?</h2>
+            <p class="text-lg text-gray-600 mb-10 max-w-2xl mx-auto">
+                The 7-Day Reset is just the beginning. When you've finished the guide, my book and the
+                Bible Study Video Series walk through the full journey — from rushing God's plan, through
+                years of silence, to complete surrender and restoration.
+            </p>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white p-8 rounded-3xl shadow-md">
+                    <h3 class="text-2xl font-semibold mb-3">The Book</h3>
+                    <p class="text-gray-600 mb-2 font-medium">The Shortcuts That Stole Everything — But Jesus Christ Restored It All</p>
+                    <p class="text-gray-500 text-sm mb-6">My full journey — from rushing God's plan, through years of silence, to complete surrender.</p>
+                    <a href="https://a.co/d/01EhUFpD" target="_blank" class="inline-block bg-gray-900 text-white px-8 py-3 rounded-full font-medium hover:bg-black transition">Find It on Amazon</a>
                 </div>
-                <button type="submit"
-                        class="w-full bg-gray-900 hover:bg-black text-white py-5 rounded-2xl font-semibold text-lg transition">
-                    Subscribe to the Newsletter
-                </button>
-            </form>
+                <div class="bg-white p-8 rounded-3xl shadow-md">
+                    <h3 class="text-2xl font-semibold mb-3">Bible Study Video Series</h3>
+                    <p class="text-gray-600 mb-6">Go deeper with me on video, one teaching at a time. Available after you complete the free 7-Day Reset.</p>
+                    <a href="#free-reset" class="inline-block bg-[#F472B6] text-white px-8 py-3 rounded-full font-medium hover:bg-pink-600 transition">Start With the Free Guide</a>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -264,14 +303,14 @@
         <div class="container mx-auto px-6 text-center">
             <h2 class="section-title text-5xl font-bold mb-6 text-white">Let's Walk This Out Together</h2>
             <p class="max-w-md mx-auto text-gray-300 mb-12 text-lg">
-                Ready to step into your “more”? I'm here to cheer you on.
+                Ready to step into your "more"? I'm here to cheer you on.
             </p>
-        
+
             <a href="https://calendly.com/pinkelitestudio"
                class="inline-block bg-[#F472B6] hover:bg-pink-600 text-white px-12 py-5 rounded-full text-xl font-semibold transition">
                 Book a Discovery Call
             </a>
-        
+
             <div class="mt-14 text-gray-400">
                 <p class="text-lg">Email: <a href="mailto:pinkeliteva@gmail.com" class="hover:text-pink-300">pinkeliteva@gmail.com</a></p>
                 <p class="text-lg mt-2">Phone: 786-385-7888</p>
@@ -284,8 +323,7 @@
         <div class="container mx-auto px-6 text-center">
             <div class="flex justify-center mb-8">
                 <img src="https://raw.githubusercontent.com/PINKEliteStudio/vividassistpro/main/calltomorelogo.png"
-                     alt="Call To More"
-                     class="h-24 object-contain">
+                     alt="Call To More" class="h-24 object-contain">
             </div>
             <p class="text-sm">© 2026 Rhina Delgado • Call To More. All rights reserved.</p>
             <p class="text-xs mt-6 text-gray-500">Built with love and faith</p>
