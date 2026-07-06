@@ -18,12 +18,12 @@
       t=document.createElement("script");t.async=!0,t.src=e;var
       r=document.getElementsByTagName("script")[0];
       r.parentNode.insertBefore(t,r)}}("https://s.pinimg.com/ct/core.js");
-    pintrk('load', '2613193419354', {em: '<user_email_address>'});
+    pintrk('load', '2613193419354');
     pintrk('page');
     </script>
     <noscript>
     <img height="1" width="1" style="display:none;" alt=""
-      src="https://ct.pinterest.com/v3/?event=init&tid=2613193419354&pd[em]=<hashed_email_address>&noscript=1" />
+      src="https://ct.pinterest.com/v3/?event=init&tid=2613193419354&noscript=1" />
     </noscript>
     <!-- End Pinterest Tag -->
     <title>Call To More | Cheerleader of Hope with Rhina Delgado</title>
@@ -65,6 +65,14 @@
         @keyframes pulse {
             0%, 100% { opacity: 1; }
             50% { opacity: 0.5; }
+        }
+
+        /* Kit success message */
+        #ctm-success {
+            display: none;
+            background: #FFF0F5;
+            border: 2px solid #F472B6;
+            color: #831843;
         }
     </style>
 </head>
@@ -221,7 +229,7 @@
                         <li class="flex items-start gap-3"><span class="text-[#F472B6] text-xl">✓</span> A scripture and devotional word for each day</li>
                         <li class="flex items-start gap-3"><span class="text-[#F472B6] text-xl">✓</span> Honest reflection questions and writing space</li>
                         <li class="flex items-start gap-3"><span class="text-[#F472B6] text-xl">✓</span> A closing prayer to speak out loud</li>
-                        <li class="flex items-start gap-3"><span class="text-[#F472B6] text-xl">✓</span> Delivered instantly to your inbox — free, no strings attached</li>
+                        <li class="flex items-start gap-3"><span class="text-[#F472B6] text-xl">✓</span> Delivered straight to your inbox — free, no strings attached</li>
                     </ul>
                 </div>
 
@@ -229,25 +237,36 @@
                     <h3 class="text-2xl font-bold mb-2 text-center">Send Me My Free Guide</h3>
                     <p class="text-gray-500 text-center mb-8 text-sm">Join hundreds of women choosing God over the noise.</p>
 
-                    <!-- 
-                        KIT (ConvertKit) FORM:
-                        Replace this form with the embed code Kit gives you for your
-                        "7-Day Heartbreak Reset" form/sequence. Kit > Grow > Landing Pages & Forms
-                        > Create Form > copy embed snippet here. Kit will auto-deliver the PDF
-                        you uploaded to Netlify as the first email in the sequence.
-                    -->
-                    <form action="https://app.kit.com/forms/YOUR_FORM_ID/subscriptions"
-                          method="post" class="space-y-4" data-sv-form="YOUR_FORM_ID">
+                    <!-- =========================================================
+                         KIT (ConvertKit) FORM — 7-Day Heartbreak Reset
+                         Form ID: 9651952
+                         Submits via AJAX so the visitor stays on YOUR page.
+                         On success, the form hides and #ctm-success shows.
+                         Kit then emails the confirmation link + PDF guide.
+                    ========================================================== -->
+                    <form id="ctm-kit-form"
+                          action="https://app.kit.com/forms/9651952/subscriptions"
+                          method="post"
+                          data-sv-form="9651952"
+                          data-uid="9651952"
+                          class="space-y-4">
                         <input type="text" name="fields[first_name]" placeholder="First Name"
                                class="w-full px-6 py-4 rounded-2xl border border-gray-200 focus:outline-none focus:border-pink-400 text-lg">
                         <input type="email" name="email_address" placeholder="Your Email Address" required
                                class="w-full px-6 py-4 rounded-2xl border border-gray-200 focus:outline-none focus:border-pink-400 text-lg">
-                        <button type="submit"
+                        <button type="submit" id="ctm-submit-btn"
                                 class="w-full bg-[#F472B6] hover:bg-pink-600 text-white py-5 rounded-2xl font-semibold text-lg transition">
                             Send Me the Free Guide →
                         </button>
                     </form>
-                    <p class="text-xs text-gray-400 text-center mt-5">No spam. Unsubscribe anytime. Just hope, scripture, and encouragement.</p>
+
+                    <!-- Success message (shown after submit) -->
+                    <div id="ctm-success" class="rounded-2xl p-6 text-center">
+                        <p class="text-xl font-bold mb-2">Check your inbox! 💗</p>
+                        <p class="text-base">One quick step: open the email from me and click <strong>confirm</strong> to unlock your free 7-Day Heartbreak Reset. It's on its way.</p>
+                    </div>
+
+                    <p id="ctm-privacy" class="text-xs text-gray-400 text-center mt-5">No spam. Unsubscribe anytime. Just hope, scripture, and encouragement.</p>
                 </div>
             </div>
         </div>
@@ -261,7 +280,7 @@
                 <p class="text-gray-600 text-xl">Practical faith and encouragement for your daily walk</p>
             </div>
 
-            <div class="flex justify-center gap-10 mb-12 text-xl">
+            <div class="flex flex-col sm:flex-row justify-center gap-10 mb-12 text-xl">
                 <a href="https://www.youtube.com/@CallToMore" target="_blank" class="flex items-center gap-3 hover:text-[#F472B6]">
                     📺 <span class="font-medium">@CallToMore on YouTube</span>
                 </a>
@@ -347,9 +366,53 @@
     </footer>
 
     <script>
+        // Mobile menu toggle
         document.getElementById('menu-toggle').addEventListener('click', () => {
             document.getElementById('mobile-menu').classList.toggle('hidden');
         });
+
+        // ============================================================
+        // KIT FORM — AJAX submit (keeps visitor on this page)
+        // ============================================================
+        (function () {
+            var form = document.getElementById('ctm-kit-form');
+            if (!form) return;
+
+            form.addEventListener('submit', function (e) {
+                e.preventDefault();
+
+                var btn = document.getElementById('ctm-submit-btn');
+                var originalBtnText = btn.innerHTML;
+                btn.disabled = true;
+                btn.innerHTML = 'Sending...';
+
+                var data = new FormData(form);
+
+                fetch(form.action, {
+                    method: 'POST',
+                    body: data,
+                    headers: { 'Accept': 'application/json' }
+                })
+                .then(function (response) { return response.json().catch(function () { return {}; }); })
+                .then(function () {
+                    // Success: hide form + privacy line, show success message
+                    form.style.display = 'none';
+                    var privacy = document.getElementById('ctm-privacy');
+                    if (privacy) privacy.style.display = 'none';
+                    document.getElementById('ctm-success').style.display = 'block';
+
+                    // Pinterest lead tracking
+                    if (window.pintrk) { pintrk('track', 'lead'); }
+                })
+                .catch(function () {
+                    // Fallback: if AJAX is blocked, submit the form normally to Kit
+                    btn.disabled = false;
+                    btn.innerHTML = originalBtnText;
+                    form.removeEventListener('submit', arguments.callee);
+                    form.submit();
+                });
+            });
+        })();
     </script>
 </body>
 </html>
