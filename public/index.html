@@ -357,18 +357,22 @@
                         <p class="text-gray-400 text-sm mb-8">Secure checkout. Delivered to your inbox in seconds.</p>
 
                         <!-- ============================================================
-                             PAYMENT BUTTONS — paste your real links into href below.
-                             Recommended: Stripe Payment Link (primary), PayPal (backup).
-                             Set both to redirect to /thank-you.html on success.
+                             PAYMENT BUTTONS
+                             LIVE: PayPal payment link (primary).
+                             Stripe button is hidden for now — when your Stripe
+                             Payment Link is ready, paste it into buy-stripe's href
+                             and delete style="display:none;" to switch it on.
+                             Both should send buyers to /thank-you.html after payment
+                             (set the return URL inside PayPal/Stripe).
                         ============================================================ -->
-                        <a href="REPLACE_WITH_STRIPE_PAYMENT_LINK" id="buy-stripe"
+                        <a href="https://www.paypal.com/ncp/payment/9DF29A42ANHCS" id="buy-paypal"
                            class="block w-full bg-[#F472B6] hover:bg-pink-600 text-white text-center py-5 rounded-2xl font-semibold text-lg transition mb-4">
                             Buy Now — $17
                         </a>
 
-                        <a href="REPLACE_WITH_PAYPAL_LINK" id="buy-paypal"
+                        <a href="REPLACE_WITH_STRIPE_PAYMENT_LINK" id="buy-stripe" style="display:none;"
                            class="block w-full bg-white hover:bg-gray-100 text-gray-900 text-center py-4 rounded-2xl font-semibold transition mb-6">
-                            Pay with PayPal
+                            Pay with Card
                         </a>
 
                         <p class="text-xs text-gray-500 text-center leading-relaxed">
