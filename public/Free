@@ -3,162 +3,151 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <meta name="description" content="Free printable: 7 Restoration Scriptures to speak over your life. Print them, place them where you'll see them, and let God restore what was lost. From Call To More.">
+    <meta name="description" content="Free download from Call To More: The 7-Step Rhythm — 7 powerful restoration scriptures and prayers to speak over your life when you're waiting on God to restore. Free printable.">
+    <meta name="keywords" content="free Christian printable, restoration scriptures, prayer cards, faith after betrayal, single mother faith, Call To More, Rhina Delgado">
     <meta name="author" content="Rhina Delgado">
-    <meta property="og:title" content="Free: 7 Restoration Scriptures — Call To More">
-    <meta property="og:description" content="Declarations to speak over your life when you're waiting on God to restore.">
+
+    <meta property="og:title" content="The 7-Step Rhythm — Free Restoration Scriptures &amp; Prayers">
+    <meta property="og:description" content="7 powerful restoration scriptures and prayers to speak over your life. Free printable from Call To More.">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="https://raw.githubusercontent.com/PinkEliteStudio/CallToMore/main/public/scriptures-cover.png">
-    <title>Free: 7 Restoration Scriptures | Call To More</title>
+    <meta property="og:image" content="https://raw.githubusercontent.com/PINKEliteStudio/vividassistpro/main/imagerhina.png">
+
+    <meta name="p:domain_verify" content="39a071a07c6dce252fd95137ce642464"/>
+
+    <!-- Pinterest Tag -->
+    <script>
+    !function(e){if(!window.pintrk){window.pintrk = function () {
+    window.pintrk.queue.push(Array.prototype.slice.call(arguments))};var
+      n=window.pintrk;n.queue=[],n.version="3.0";var
+      t=document.createElement("script");t.async=!0,t.src=e;var
+      r=document.getElementsByTagName("script")[0];
+      r.parentNode.insertBefore(t,r)}}("https://s.pinimg.com/ct/core.js");
+    pintrk('load', '2613193419354');
+    pintrk('page');
+    </script>
+    <noscript>
+    <img height="1" width="1" style="display:none;" alt=""
+      src="https://ct.pinterest.com/v3/?event=init&tid=2613193419354&noscript=1" />
+    </noscript>
+
+    <title>Free Download: The 7-Step Rhythm | Restoration Scriptures &amp; Prayers</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Inter:wght@400;500;600&display=swap');
-        .logo { height: 88px; max-width: 260px; width: auto; object-fit: contain; }
-        @media (max-width: 768px) { .logo { height: 62px; } }
         .title-font { font-family: 'Playfair Display', serif; font-weight: 900; letter-spacing: -0.02em; }
         .section-title { font-family: 'Playfair Display', serif; font-weight: 700; }
+        .logo { height: 88px; max-width: 260px; width: auto; object-fit: contain; }
+        @media (max-width: 768px) { .logo { height: 62px; } }
         .hover-pink { transition: all 0.3s ease; }
         .hover-pink:hover { color: #F472B6; transform: translateY(-2px); }
-        #ctm-success { display: none; }
-        body { font-family: 'Inter', sans-serif; }
+        .formkit-spinner { display: none; }
     </style>
-</head>
-<body class="bg-[#FFF0F5] text-gray-800">
 
-    <!-- HEADER (identical to your homepage) -->
+    <!-- Kit form script -->
+    <script src="https://f.convertkit.com/ckjs/ck.5.js"></script>
+</head>
+<body class="bg-[#FDE7F1] font-sans text-gray-800">
+
+    <!-- HEADER -->
     <header class="bg-white shadow-md fixed top-0 w-full z-50">
         <div class="container mx-auto px-6 py-2 flex items-center justify-between">
-            <a href="/"><img src="https://raw.githubusercontent.com/PINKEliteStudio/vividassistpro/main/calltomorelogo.png"
-                 alt="Call To More" class="logo"></a>
-
-            <nav class="hidden md:flex items-center space-x-7 text-sm font-medium">
-                <a href="/#home" class="hover-pink">Home</a>
-                <a href="/#message" class="hover-pink">My Story</a>
-                <a href="/#inside" class="hover-pink">What's Inside</a>
-                <a href="/#seeking-room" class="hover-pink">Get the Planner</a>
-                <a href="/#book" class="hover-pink">Book</a>
-                <a href="/free.html" class="hover-pink font-semibold text-[#F472B6]">Free Download</a>
-                <a href="/#contact" class="hover-pink">Connect</a>
-            </nav>
-
-            <a href="/#seeking-room"
-               class="hidden md:block bg-[#F472B6] hover:bg-pink-600 text-white px-6 py-2.5 rounded-full font-medium transition-all text-sm">
-                Get The Seeking Room — $17
+            <a href="/index.html">
+                <img src="https://raw.githubusercontent.com/PINKEliteStudio/vividassistpro/main/calltomorelogo.png"
+                     alt="Call To More" class="logo">
             </a>
-
-            <button id="menu-toggle" class="md:hidden text-gray-700 focus:outline-none" aria-label="Menu">
-                <svg xmlns="http://www.w3.org/2000/svg" class="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-                </svg>
-            </button>
-        </div>
-
-        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
-            <div class="px-6 py-6 flex flex-col space-y-5 text-base">
-                <a href="/#home" class="hover-pink">Home</a>
-                <a href="/#message" class="hover-pink">My Story</a>
-                <a href="/#inside" class="hover-pink">What's Inside</a>
-                <a href="/#seeking-room" class="hover-pink">Get the Planner</a>
-                <a href="/#book" class="hover-pink">Book</a>
-                <a href="/free.html" class="hover-pink font-semibold text-[#F472B6]">Free Download</a>
-                <a href="/#contact" class="hover-pink">Connect</a>
-                <a href="/#seeking-room" class="bg-[#F472B6] text-white px-6 py-3 rounded-full text-center font-medium">
-                    Get The Seeking Room — $17
-                </a>
-            </div>
+            <nav class="flex items-center space-x-7 text-sm font-medium">
+                <a href="/index.html#home" class="hover-pink">Home</a>
+                <a href="/index.html#seeking-room" class="hover-pink font-semibold text-[#F472B6]">Get the Planner</a>
+                <a href="/index.html#book" class="hover-pink hidden sm:inline">Book</a>
+            </nav>
         </div>
     </header>
 
-    <!-- HERO -->
-    <section class="pt-40 md:pt-32 pb-16 px-6 bg-[#f7cce3]">
-        <div class="container mx-auto grid md:grid-cols-2 gap-12 items-center max-w-6xl">
-            <div>
-                <span class="inline-block bg-[#B8860B] text-white text-xs font-bold tracking-widest px-5 py-2 rounded-full mb-6">FREE PRINTABLE</span>
-                <h1 class="title-font text-4xl md:text-5xl leading-tight text-[#DB2777] mb-6">
-                    7 Restoration<br>Scriptures
-                    <span class="block italic font-normal text-gray-800" style="font-family:'Playfair Display',serif;">to speak over your life</span>
-                </h1>
-                <p class="text-lg text-gray-700 mb-6">When you're waiting on God to restore what was lost, His Word is where you stand.</p>
-                <ul class="space-y-3 text-gray-700">
-                    <li class="flex items-start gap-3"><span class="text-[#B8860B] text-xl leading-none">&#10022;</span> 7 restoration Scriptures with a spoken declaration for each</li>
-                    <li class="flex items-start gap-3"><span class="text-[#B8860B] text-xl leading-none">&#10022;</span> Print them, cut them out, place them on your mirror or wall</li>
-                    <li class="flex items-start gap-3"><span class="text-[#B8860B] text-xl leading-none">&#10022;</span> Read them out loud each morning &mdash; and watch what shifts</li>
-                </ul>
-            </div>
+    <!-- HERO + FORM -->
+    <section class="min-h-screen flex items-center pt-32 pb-16">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
 
-            <div class="bg-white rounded-3xl shadow-2xl border border-[#f7cce3] p-8 md:p-10">
-                <div id="ctm-form-wrap">
-                    <h2 class="section-title text-2xl text-[#DB2777] text-center mb-2">Get your free Scriptures</h2>
-                    <p class="text-center text-sm text-gray-500 mb-6">Enter your email and I'll send them straight to your inbox.</p>
+                <!-- LEFT: the pitch -->
+                <div>
+                    <span class="inline-block bg-white text-[#DB2777] font-semibold px-5 py-2 rounded-full text-sm mb-6">A FREE PRINTABLE FROM CALL TO MORE</span>
+                    <h1 class="title-font text-4xl md:text-6xl leading-tight mb-6">
+                        The <span class="italic" style="color: #DB2777;">7-Step</span> Rhythm
+                    </h1>
+                    <p class="section-title text-2xl text-gray-800 mb-6 leading-snug">
+                        7 powerful restoration scriptures &amp; prayers to speak over your life.
+                    </p>
+                    <p class="text-lg text-gray-600 mb-8 leading-relaxed">
+                        When you're waiting on God to restore &mdash; your heart, your health, your finances, your years &mdash;
+                        these are the words to pray. Print them. Cut them out. Place them where you'll see them daily.
+                        Read the verse and pray the prayer out loud each morning.
+                    </p>
+                    <ul class="space-y-3 text-gray-700 mb-4">
+                        <li class="flex items-start gap-3"><span class="text-[#F472B6] text-xl">&#10003;</span> 7 print-and-cut prayer cards (NIV)</li>
+                        <li class="flex items-start gap-3"><span class="text-[#F472B6] text-xl">&#10003;</span> One for loneliness, fear, doubt, healing &amp; more</li>
+                        <li class="flex items-start gap-3"><span class="text-[#F472B6] text-xl">&#10003;</span> A full prayer under every scripture</li>
+                        <li class="flex items-start gap-3"><span class="text-[#F472B6] text-xl">&#10003;</span> Instant &mdash; delivered the moment you enter your email</li>
+                    </ul>
+                </div>
 
-                    <!-- KIT FORM — replace FORM_ID (3 places) with your new Kit form number -->
-                    <form id="ctm-free-form"
-                          action="https://app.kit.com/forms/FORM_ID/subscriptions"
-                          method="post" data-sv-form="FORM_ID" data-uid="FORM_ID" class="space-y-3">
-                        <input type="text" name="fields[first_name]" placeholder="First Name" autocomplete="given-name"
-                               class="w-full px-5 py-4 rounded-xl border border-[#f7cce3] bg-[#FFFBF7] focus:outline-none focus:ring-2 focus:ring-[#F472B6]">
-                        <input type="email" name="email_address" placeholder="Your Email Address" required autocomplete="email"
-                               class="w-full px-5 py-4 rounded-xl border border-[#f7cce3] bg-[#FFFBF7] focus:outline-none focus:ring-2 focus:ring-[#F472B6]">
-                        <button type="submit"
-                                class="w-full bg-[#DB2777] hover:bg-[#F472B6] text-white font-bold py-4 rounded-full transition-all text-lg">
-                            SEND MY FREE SCRIPTURES
-                        </button>
+                <!-- RIGHT: the Kit form -->
+                <div>
+                    <!-- KIT FORM — The 7-Step Rhythm Free Download — Form ID: 9678654 -->
+                    <form action="https://app.kit.com/forms/9678654/subscriptions" class="seva-form formkit-form"
+                          method="post" data-sv-form="9678654" data-uid="d6b9ecedc8" data-format="inline" data-version="5"
+                          style="background-color:#ffffff;border-radius:24px;box-shadow:0 20px 40px rgba(0,0,0,0.12);overflow:hidden;">
+                        <div class="p-8 md:p-10">
+                            <h2 class="section-title text-3xl font-bold mb-2 text-center" style="color:#DB2777;">Get The 7-Step Rhythm &mdash; Free</h2>
+                            <p class="text-gray-500 text-center mb-8 text-sm">Enter your email and it's yours instantly.</p>
+                            <ul class="formkit-alert formkit-alert-error" data-element="errors" data-group="alert"></ul>
+                            <div data-element="fields" class="seva-fields formkit-fields space-y-4">
+                                <div class="formkit-field">
+                                    <input class="formkit-input w-full px-6 py-4 rounded-2xl border border-gray-200 focus:outline-none focus:border-pink-400"
+                                           name="email_address" aria-label="Email Address" placeholder="Your Email Address" required type="email">
+                                </div>
+                                <button data-element="submit" class="formkit-submit formkit-submit w-full text-white py-4 rounded-2xl font-semibold text-lg transition"
+                                        style="background-color:#F472B6;">
+                                    <div class="formkit-spinner"><div></div><div></div><div></div></div>
+                                    <span>Send Me the Prayers</span>
+                                </button>
+                            </div>
+                            <p class="text-xs text-gray-400 text-center mt-5">We respect your privacy. Unsubscribe at anytime.</p>
+                        </div>
                     </form>
-                    <p class="text-center text-xs text-gray-400 mt-4">No spam. Unsubscribe anytime.</p>
                 </div>
 
-                <div id="ctm-success" class="text-center py-6">
-                    <h2 class="section-title text-2xl text-[#DB2777] mb-3">Check your inbox! &#128151;</h2>
-                    <p class="text-gray-700">Your 7 Restoration Scriptures are on the way. If you don't see the email in a minute, check your promotions or spam folder.</p>
-                </div>
             </div>
         </div>
     </section>
 
-    <!-- PREVIEW -->
-    <section class="bg-white py-16 px-6">
-        <div class="container mx-auto max-w-4xl text-center">
-            <h3 class="section-title text-3xl text-[#DB2777] mb-3">What you're getting</h3>
-            <p class="text-gray-700 max-w-xl mx-auto mb-10">A beautifully designed printable you'll actually want on your wall. Speak these over your season &mdash; there is power in declaring God's Word out loud.</p>
-            <div class="flex gap-6 justify-center flex-wrap">
-                <img src="https://raw.githubusercontent.com/PinkEliteStudio/CallToMore/main/public/scriptures-cover.png" alt="7 Restoration Scriptures cover" class="w-64 rounded-xl shadow-lg border border-[#f7cce3]">
-                <img src="https://raw.githubusercontent.com/PinkEliteStudio/CallToMore/main/public/scriptures-cards.png" alt="Restoration Scripture cards" class="w-64 rounded-xl shadow-lg border border-[#f7cce3]">
-            </div>
+    <!-- SOFT PLANNER PITCH -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6 max-w-3xl text-center">
+            <h2 class="section-title text-3xl md:text-4xl font-bold mb-6">Ready to go deeper than 7 cards?</h2>
+            <p class="text-lg text-gray-600 mb-8 leading-relaxed">
+                These prayers are just the beginning of the rhythm. <strong>The Seeking Room</strong> is a 155-page guided
+                devotional planner &mdash; Hebrew &amp; Greek word studies, ten sections, and the full 7-step rhythm that rebuilt me
+                after betrayal. Made for this exact season.
+            </p>
+            <a href="/index.html#seeking-room"
+               class="inline-block bg-[#F472B6] hover:bg-pink-600 text-white px-10 py-5 rounded-full font-semibold text-xl shadow-md hover:shadow-xl transition-all">
+                Get The Seeking Room &mdash; $17
+            </a>
         </div>
     </section>
 
-    <!-- FOOTER (matches your homepage footer style) -->
+    <!-- FOOTER -->
     <footer class="bg-gray-950 text-gray-400 py-14">
         <div class="container mx-auto px-6 text-center">
-            <div class="flex justify-center mb-6">
-                <img src="https://raw.githubusercontent.com/PINKEliteStudio/vividassistpro/main/calltomorelogo.png"
-                     alt="Call To More" class="h-20 object-contain">
+            <div class="flex justify-center gap-8 mb-8 text-sm">
+                <a href="https://www.instagram.com/calltomore" target="_blank" rel="noopener" class="hover:text-pink-300">Instagram</a>
+                <a href="https://www.youtube.com/@CallToMore" target="_blank" rel="noopener" class="hover:text-pink-300">YouTube</a>
+                <a href="https://www.pinterest.com/calltomore/" target="_blank" rel="noopener" class="hover:text-pink-300">Pinterest</a>
+                <a href="https://a.co/d/01EhUFpD" target="_blank" rel="noopener" class="hover:text-pink-300">Amazon</a>
             </div>
-            <p class="text-sm">&copy; 2026 Rhina Delgado &bull; Call To More. All rights reserved.</p>
-            <p class="text-xs mt-4">
-                <a href="/" class="hover:text-gray-300">calltomoreandyou.com</a> &middot;
-                <a href="https://instagram.com/calltomore" class="hover:text-gray-300">@calltomore</a>
-            </p>
+            <p class="text-sm">&copy; 2026 Rhina Delgado &bull; Call To More &middot; <a href="https://calltomoreandyou.com" class="hover:text-pink-300">calltomoreandyou.com</a></p>
         </div>
     </footer>
 
-    <script>
-        document.getElementById('menu-toggle').addEventListener('click', function () {
-            document.getElementById('mobile-menu').classList.toggle('hidden');
-        });
-        (function () {
-            var form = document.getElementById('ctm-free-form');
-            if (!form) return;
-            form.addEventListener('submit', function (e) {
-                e.preventDefault();
-                fetch(form.action, { method: 'POST', body: new FormData(form), mode: 'no-cors' })
-                    .then(function () {
-                        document.getElementById('ctm-form-wrap').style.display = 'none';
-                        document.getElementById('ctm-success').style.display = 'block';
-                    })
-                    .catch(function () { form.submit(); });
-            });
-        })();
-    </script>
 </body>
 </html>
